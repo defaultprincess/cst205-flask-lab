@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Planets{% endblock %}
+{% block content %}
+<h1>Planets</h1>
+<ul>
+    {% for name, description in planets.items() %}
+    <li><strong>{{ name }}</strong>: {{ description }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

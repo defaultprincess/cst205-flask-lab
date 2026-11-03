@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block title %}Random Negative{% endblock %}
+{% block content %}
+<h1 class="text-center">Random Negative</h1>
+<div class="text-center"><img src="{{ url_for('static', filename='negative.png') }}?v={{ version }}" class="img-fluid w-50" alt="Negative of a random image"></div>
+{% endblock %}

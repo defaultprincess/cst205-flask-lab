@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Flask Lab{% endblock %}</title>
+    {{ bootstrap.load_css() }}
+</head>
+<body>
+    <div class="container mt-4">
+        <p class="text-center">
+            <a href="/">Home</a> |
+            <a href="/image">Image</a> |
+            <a href="/bootstrap">Bootstrap</a> |
+            <a href="/dictionary">Dictionary</a> |
+            <a href="/random">Random Negative</a>
+        </p>
+        {% block content %}{% endblock %}
+    </div>
+    {{ bootstrap.load_js() }}
+</body>
+</html>

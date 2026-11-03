@@ -1,0 +1,6 @@
+venv/
+cst205env/
+__pycache__/
+*.pyc
+.env
+.DS_Store

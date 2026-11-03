@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block title %}Bootstrap Image{% endblock %}
+{% block content %}
+<h1 class="text-center">My Image with Bootstrap</h1>
+<div class="text-center"><img src="{{ url_for('static', filename='photo.jpg') }}" class="img-fluid w-75" alt="My photo"></div>
+{% endblock %}
